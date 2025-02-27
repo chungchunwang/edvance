@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0" version="26.0.16">
+  <diagram name="Page-1" id="p_WE0Dm36_8SnMLj7Snu">
+    <mxGraphModel dx="934" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Lucida Console;" parent="1" source="LyxQhL4PqP1_1bGI5EFB-2" target="LyxQhL4PqP1_1bGI5EFB-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-2" value="Microphone" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.radio.microphone_1;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="660" y="530" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-11" value="Sound Recognition Device - ESP32-S3" style="swimlane;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="120" y="370" width="410" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-13" value="Train Weights" style="swimlane;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" parent="LyxQhL4PqP1_1bGI5EFB-11" vertex="1">
+          <mxGeometry x="110" y="240" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Lucida Console;" parent="LyxQhL4PqP1_1bGI5EFB-13" source="LyxQhL4PqP1_1bGI5EFB-17" target="LyxQhL4PqP1_1bGI5EFB-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-17" value="Trigger Sample" style="html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="LyxQhL4PqP1_1bGI5EFB-13" vertex="1">
+          <mxGeometry x="15" y="30" width="55" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-18" value="Recording" style="html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="LyxQhL4PqP1_1bGI5EFB-13" vertex="1">
+          <mxGeometry x="130" y="30" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-36" value="Save Weights" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" parent="LyxQhL4PqP1_1bGI5EFB-13" vertex="1">
+          <mxGeometry x="15" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-22" value="Cloud API" style="swimlane;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="630" y="260" width="200" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-23" value="/trigger (POST)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" parent="LyxQhL4PqP1_1bGI5EFB-22" vertex="1">
+          <mxGeometry x="10" y="30" width="180" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-24" value="&lt;div&gt;query properties:&lt;/div&gt;audio: .wav file (1 second)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" parent="LyxQhL4PqP1_1bGI5EFB-23" vertex="1">
+          <mxGeometry y="26" width="180" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-32" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;returns:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;weights&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" parent="LyxQhL4PqP1_1bGI5EFB-23" vertex="1">
+          <mxGeometry y="70" width="180" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="DzI4yUuWGtTE8vHJxyPO-13" value="/trigger (POST)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="LyxQhL4PqP1_1bGI5EFB-22">
+          <mxGeometry y="156" width="180" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="DzI4yUuWGtTE8vHJxyPO-14" value="&lt;div&gt;query properties:&lt;/div&gt;audio: .wav file (1 second)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="DzI4yUuWGtTE8vHJxyPO-13">
+          <mxGeometry y="26" width="180" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="DzI4yUuWGtTE8vHJxyPO-15" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;returns:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;weights&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="DzI4yUuWGtTE8vHJxyPO-13">
+          <mxGeometry y="70" width="180" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" parent="1" source="LyxQhL4PqP1_1bGI5EFB-41" target="LyxQhL4PqP1_1bGI5EFB-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="55" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LyxQhL4PqP1_1bGI5EFB-41" value="btn" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=center;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeWidth=2;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="40" y="430" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzI4yUuWGtTE8vHJxyPO-2" value="Sound Recognition Device Spec&amp;nbsp;&lt;div&gt;Rev 0.0.1&lt;/div&gt;&lt;div&gt;EdVance/BuzzyEDU&lt;/div&gt;&lt;div&gt;L07&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
+          <mxGeometry x="10" width="230" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
